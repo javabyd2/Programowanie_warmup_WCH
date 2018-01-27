@@ -32,6 +32,18 @@ public class PTest {
                 numbers),
         is(equalTo(Arrays.asList(5,4,3,2,1))));
     }
+    @Test
+    public void shouldReturnTrueWhenListIsPalindrome() throws Exception{
+        assertThat(PTestImpl.isPalindrome(
+                Arrays.asList("x","a","m","a","x")
+        ));
+    }
+    @Test
+    public void shouldRemoveKthElementFromList()throws Exception{
+        Object[] result = PTestImpl.removeAt(
+                Arrays.asList("a","b","c","d"),2);
+        assertThat(result[0]);
+    }
 
 }
 

@@ -19,4 +19,8 @@ public class PTestImpl {
         Collections.reverse(numbers);
         return numbers;
     }
+
+    public static Object isPalindrome(List<String> strings) {
+
+    }
 }
